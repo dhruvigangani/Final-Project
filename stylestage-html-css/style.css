@@ -9,7 +9,6 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #000000; /* Light aqua background */
-    color: #000000; /* Dark gray for contrast */
 }
 
 /* Container */
@@ -21,9 +20,9 @@ body {
 }
 
 .skip-link {
-    display: block; /* Change to block for full width behavior */
-    width: fit-content; /* Allow the width to fit the content */
-    margin: 20px auto; /* Center horizontally with auto margins */
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
     padding: 10px 20px; /* Padding for better aesthetics */
     background-color: rgba(144, 218, 216, 0.8); /* Light background, slightly transparent */
     color: #333; /* Dark text for contrast */
@@ -192,9 +191,9 @@ aside h4 {
 
 /* Footer Links */
 .page-footer a {
-    color: #ffffff; /* White text for footer links */
-    text-decoration: none; /* No underline on links */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .page-footer a:hover {
@@ -203,23 +202,23 @@ aside h4 {
 
 /* Ensure Source Files Section Matches the Styling */
 footer#files .container {
-    background: rgba(115, 169, 172, 0.8); /* Same dark background */
-    padding: 20px; /* Consistent padding */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    background: rgba(115, 169, 172, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Styling for Source Files Links */
 footer#files a {
-    display: block; /* Block display for layout */
-    margin: 10px 0; /* Margin for spacing */
-    padding: 10px 15px; /* Padding for aesthetics */
-    background: rgb(163, 65, 170); /* Light background for links */
-    color: #333; /* Dark text for contrast */
-    border: 2px solid #000000; /* Border to define the box */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center text inside */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    display: block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background: rgb(163, 65, 170);
+    color: #333;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 footer#files a:hover {
@@ -229,34 +228,34 @@ footer#files a:hover {
 /* Media Queries */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack navigation items on small screens */
-        align-items: center; /* Center align items */
+        flex-direction: column; 
+        align-items: center;
     }
 
     nav a {
-        width: 100%; /* Make links full width on small screens */
-        text-align: center; /* Center align text */
-        margin: 5px 0; /* Margin for spacing between links */
-        padding: 10px; /* Padding adjustment for smaller screens */
+        width: 100%; 
+        text-align: center;
+        margin: 5px 0;
+        padding: 10px;
     }
 
     .container {
-        width: 95%; /* Slightly wider for smaller screens */
+        width: 95%; 
     }
 
     header {
-        padding: 15px; /* Reduced padding for smaller screens */
+        padding: 15px;
     }
 
     h2 {
-        font-size: 1.5em; /* Slightly smaller heading on mobile */
+        font-size: 1.5em;
     }
 
     h3 {
-        font-size: 1.2em; /* Slightly smaller subheading on mobile */
+        font-size: 1.2em;
     }
 
     aside {
-        padding: 15px; /* Reduced padding for smaller screens */
+        padding: 15px;
     }
 }
