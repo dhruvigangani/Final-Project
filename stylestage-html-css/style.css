@@ -1,0 +1,188 @@
+/* Reset some basic styles for consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000000; /* Dark ocean background */
+    color: #ffffff; /* Default text color */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-image: url('../images/WhatsApp\ Image\ 2025-04-20\ at\ 5.31.01\ PM\ \(2\).jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the header area */
+    background-position: center; /* Center the image */
+    border-radius: 8px;
+    margin: 0 12%; /* Margin for centering */
+    color: rgb(255, 255, 255); /* White text for contrast */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
+}
+
+/* Navigation */
+nav {
+    background: #005f6b; /* Darker teal for navigation */
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+    justify-content: space-around; /* Distribute space between items */
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffffff; /* White text for navigation links */
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #007a8e; /* Lighter teal on hover */
+    border-radius: 5px; /* Slight rounding of corners */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px 0;
+}
+
+/* Additional styles to adjust GitHub star icon size */
+.link-github svg {
+    width: 20px; /* Adjusted size for better visibility */
+    height: 20px; /* Adjusted size for better visibility */
+}
+
+/* Section Backgrounds */
+#about {
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    padding: 30px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255); /* Change text color for better contrast */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Soft white shadow for depth */
+}
+
+#guidelines, #contribute {
+    background: rgba(0, 32, 64, 0.8); /* Dark ocean inspired background */
+    padding: 40px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255); /* White text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for consistency */
+}
+
+/* Articles */
+article {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ffffff; /* White heading */
+    margin: 20px 0;
+    font-size: 1.8em; /* Larger title for emphasis */
+}
+
+h3 {
+    color: #ffffff; /* White subheading */
+    margin: 15px 0;
+}
+
+/* Blockquote */
+blockquote {
+    border-left: 4px solid #58a0b0; /* Teal border for blockquotes */
+    margin: 15px 0;
+    padding-left: 15px;
+    color: #ffffff; /* White text for blockquote */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for contrast */
+    font-style: italic; /* Italicize the text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for blockquote */
+}
+
+blockquote p {
+    margin: 0; /* Remove margin for quotes */
+}
+
+/* Lists */
+ul {
+    list-style-position: inside;
+    margin: 10px 0;
+}
+
+ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+/* Profile and Sidebar Styles */
+aside {
+    background: rgba(0, 0, 0, 0.8); /* Dark background for aside */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+aside h4 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.page-footer {
+    background-color: #001f2f; /* Dark ocean background for footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center; /* Centered text */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Shadow for separation */
+}
+
+/* Footer Links */
+.page-footer a {
+    color: #58a0b0; /* Teal color for footer links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.page-footer a:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center align items */
+    }
+
+    .container {
+        width: 95%; /* Slightly wider for smaller screens */
+    }
+
+    header {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Slightly smaller heading */
+    }
+
+    h3 {
+        font-size: 1.2em; /* Slightly smaller subheading */
+    }
+
+    aside {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}
