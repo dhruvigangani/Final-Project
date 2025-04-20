@@ -1,15 +1,3 @@
-/* CSS Variables for Color Theme */
-
-:root {
-    --ocean-dark: #001f2f; /* Dark ocean color */
-    --teal: #58a0b0; /* Teal color */
-    --dark-gray: rgba(0, 0, 0, 0.9); /* Dark semi-transparent color */
-    --medium-gray: rgba(0, 0, 0, 0.8); /* Medium semi-transparent color */
-    --light-gray: rgba(255, 255, 255, 0.1); /* Light semi-transparent color */
-    --white: #ffffff; /* White text */
-    --hover-teal: #007a8e; /* Lighter teal for hover */
-}
-
 /* Reset some basic styles for consistency */
 * {
     box-sizing: border-box;
@@ -20,8 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: rgb(144, 204, 95); /* Light background */
-    color: var(--white); /* Default text color */
+    background-color: #000000; /* Light aqua background */
+    color: #000000; /* Dark gray for contrast */
 }
 
 /* Container */
@@ -32,19 +20,41 @@ body {
     padding: 20px;
 }
 
+.skip-link {
+    display: block; /* Change to block for full width behavior */
+    width: fit-content; /* Allow the width to fit the content */
+    margin: 20px auto; /* Center horizontally with auto margins */
+    padding: 10px 20px; /* Padding for better aesthetics */
+    background-color: rgba(144, 218, 216, 0.8); /* Light background, slightly transparent */
+    color: #333; /* Dark text for contrast */
+    text-decoration: none; /* Remove underline */
+    border: 2px solid #000000; /* Border to define the box */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text inside */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.skip-link:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full white on hover */
+}
+
 /* Header */
 header {
-    background: rgba(193, 93, 57, 0.9); /* Dark background for header */
+    background: rgb(190, 104, 147); /* Coral background for header */
+    border: 2px solid black;
     border-radius: 8px;
     margin: 0 12%; /* Margin for centering */
-    color: var(--white); /* White text for contrast */
+    color: rgb(0, 0, 0); /* White text for contrast */
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0); /* Stronger shadow for depth */
+    box-shadow: 0 4px 7px rgb(59, 218, 64); /* Stronger shadow for depth */
 }
 
 /* Navigation */
 nav {
-    background: var(--teal); /* Teal for navigation */
+    background: #9d66b4; /* Darker teal for navigation */
+    margin-top: 30px; /* Add space above the nav */
+    border: 2px solid black;
 }
 
 /* Navigation Links */
@@ -55,18 +65,20 @@ nav ul {
 }
 
 nav a {
-    color: var(--white); /* White text for navigation links */
+    background-color: #bde862;
+    color: #000000; /* White text for navigation links */
+    border: 2px solid black;
+    border-radius: 10px;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
 }
 
 nav a:hover {
-    background-color: var(--hover-teal); /* Lighter teal on hover */
+    background-color: #007a8e; /* Lighter teal on hover */
     border-radius: 5px; /* Slight rounding of corners */
     transform: scale(1.05); /* Slight enlargement on hover */
 }
-
 /* Main Content */
 main {
     padding: 20px 0;
@@ -78,21 +90,33 @@ main {
     height: 20px; /* Adjusted size for better visibility */
 }
 
-/* Section Backgrounds */
-#about {
-    background: var(--dark-gray); /* Dark semi-transparent background */
-    padding: 30px;
-    border-radius: 8px;
-    color: var(--white); /* Change text color for better contrast */
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Soft white shadow for depth */
+.link-github {
+    display: block; /* Change to block for full width behavior */
+    width: fit-content; /* Allow the width to fit the content */
+    padding: 10px 20px; /* Padding for better aesthetics */
+    background-color: rgba(144, 218, 216, 0.8); /* Light background, slightly transparent */
+    color: #333; /* Dark text for contrast */
+    text-decoration: none; /* Remove underline */
+    border: 2px solid #000000; /* Border to define the box */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text inside */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-#guidelines, #contribute {
-    background: var(--medium-gray); /* Dark ocean inspired background */
-    padding: 40px;
-    border-radius: 8px;
-    color: var(--white); /* White text for readability */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for consistency */
+.link-github:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full white background on hover */
+}
+
+/* Section Backgrounds */
+section {
+    background: rgb(202, 188, 196); /* Light semi-transparent background for sections */
+    padding: 30px; /* Consistent padding */
+    border: 2px solid black;
+    border-radius: 8px; /* Rounded corners */
+    color: rgb(0, 0, 0); /* Dark text for readability */
+    box-shadow: 0 4px 10px rgba(70, 233, 97, 0.929); /* Shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
 }
 
 /* Articles */
@@ -101,25 +125,25 @@ article {
 }
 
 h2 {
-    color: var(--white); /* White heading */
+    color: #000000; /* Coral heading */
     margin: 20px 0;
     font-size: 1.8em; /* Larger title for emphasis */
 }
 
 h3 {
-    color: var(--white); /* White subheading */
+    color: #0277bd; /* Darker blue for subheading */
     margin: 15px 0;
 }
 
 /* Blockquote */
 blockquote {
-    border-left: 4px solid var(--teal); /* Teal border for blockquotes */
+    border-left: 4px solid #000000; /* Coral border for blockquotes */
     margin: 15px 0;
     padding-left: 15px;
-    color: var(--white); /* White text for blockquote */
-    background-color: rgba(0, 0, 0, 0.5); /* Dark background for contrast */
-    font-style: italic;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for blockquote */
+    color: #333333; /* Dark text for blockquote */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    font-style: italic; /* Italicize the text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for blockquote */
 }
 
 blockquote p {
@@ -128,7 +152,6 @@ blockquote p {
 
 /* Lists */
 ul {
-    list-style-position: inside;
     margin: 10px 0;
 }
 
@@ -137,44 +160,84 @@ ol {
     padding-left: 20px;
 }
 
-/* Profile and Sidebar Styles */
-aside {
-    background: var(--medium-gray); /* Dark background for aside */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-}
-
-aside h4 {
-    margin-bottom: 10px;
-}
-
 /* Footer */
 .page-footer {
-    background-color: var(--ocean-dark); /* Dark ocean background for footer */
-    color: var(--white);
-    padding: 20px 0;
-    text-align: center; /* Centered text */
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Shadow for separation */
+    margin: 0 12%; /* Margin for centering */
+    background: rgb(228, 118, 118); /* Light semi-transparent background for sections */
+    padding: 30px; /* Consistent padding */
+    border: 2px solid black;
+    border-radius: 8px; /* Rounded corners */
+    color: rgb(0, 0, 0); /* Dark text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* Profile and Sidebar Styles */
+aside {
+    margin: 0 12%; /* Margin for centering */
+    background: rgb(140, 202, 153); /* Light semi-transparent background for sections */
+    padding: 30px; /* Consistent padding */
+    border: 2px solid black;
+    border-radius: 8px; /* Rounded corners */
+    color: rgb(0, 0, 0); /* Dark text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* Profile Sidebar Heading */
+aside h4 {
+    color: #ffffff; /* White text for the heading */
+    margin-bottom: 10px; /* Spacing for heading */
 }
 
 /* Footer Links */
 .page-footer a {
-    color: var(--teal); /* Teal color for footer links */
-    text-decoration: none;
+    color: #ffffff; /* White text for footer links */
+    text-decoration: none; /* No underline on links */
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 
 .page-footer a:hover {
-    color: var(--white); /* Change to white on hover */
+    color: #58a0b0; /* Change to teal on hover */
+}
+
+/* Ensure Source Files Section Matches the Styling */
+footer#files .container {
+    background: rgba(115, 169, 172, 0.8); /* Same dark background */
+    padding: 20px; /* Consistent padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Styling for Source Files Links */
+footer#files a {
+    display: block; /* Block display for layout */
+    margin: 10px 0; /* Margin for spacing */
+    padding: 10px 15px; /* Padding for aesthetics */
+    background: rgb(163, 65, 170); /* Light background for links */
+    color: #333; /* Dark text for contrast */
+    border: 2px solid #000000; /* Border to define the box */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text inside */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer#files a:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full white on hover */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack navigation items */
+        flex-direction: column; /* Stack navigation items on small screens */
         align-items: center; /* Center align items */
+    }
+
+    nav a {
+        width: 100%; /* Make links full width on small screens */
+        text-align: center; /* Center align text */
+        margin: 5px 0; /* Margin for spacing between links */
+        padding: 10px; /* Padding adjustment for smaller screens */
     }
 
     .container {
@@ -186,11 +249,11 @@ aside h4 {
     }
 
     h2 {
-        font-size: 1.5em; /* Slightly smaller heading */
+        font-size: 1.5em; /* Slightly smaller heading on mobile */
     }
 
     h3 {
-        font-size: 1.2em; /* Slightly smaller subheading */
+        font-size: 1.2em; /* Slightly smaller subheading on mobile */
     }
 
     aside {
